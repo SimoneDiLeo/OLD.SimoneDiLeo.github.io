@@ -64,10 +64,31 @@
 			</article>
 
 			<!-- Portfolio -->
+			
 			<article id="portofolio">
 				<h2 class="major">PORTFOLIO</h2>
 				<p>In this section there are some of the public projects I have worked on (or am working on).
+				<h2 class="major">MiurViz</h2>
+				
 				</p>
+				<h2 class="major">MIUR Data Analysis</h2>
+				<p>This project allows to analyze and visualize data related to Italian universities (Open Data MIUR).
+					The project uses R and is easily reproducible, being the data and all the resources available online
+
+						<section id="portfolio" class="portfolio section-bg">
+							<div class="container">
+								<a href="https://simonedileo.github.io/MiurViz/" >
+									<div class="portfolio-wrap">
+										<img src="./images/portfolio2.JPG" class="MiurVizImg">
+										<div class="overlayMiurViz">
+											<div class="text">MiurViz</div>
+
+										</div>
+									</div>
+								</a>
+							</div>
+							
+				
 				<h2 class="major">MIUR Data Analysis</h2>
 				<p>This project allows to visualize the results of clustering analysis of data related to Italian
 					universities (Open Data MIUR). In particular, data are analyzed through the use of the following
@@ -95,6 +116,7 @@
 									</div>
 								</a>
 							</div>
+
 
 				</section>
 
@@ -322,8 +344,29 @@
 
 		border: solid 1px #ffffff;
 	}
+.MiurVizImg {
+		height: 5rem;
+		width: 10rem;
+		line-height: 20rem;
 
+		border: solid 1px #ffffff;
+	}
+	.overlayMiurViz {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: 5rem;
+		width: 10rem;
+		opacity: 0;
+		transition: .5s ease;
+		background-color: #035851;
+	}
 
+	.container:hover .overlayMiurViz {
+		opacity: 1;
+	}
 	.container {
 		position: relative;
 
